@@ -1,0 +1,8 @@
+// Add the next contents to message SoftmaxParameter
+message SoftmaxParameter {
+    // the next added for WeightedSoftmaxWithLossLayer
+    // pos_mult: class weight, default = 1
+    // pos_cid: class id, specify the class id repected to the class weight.
+    repeated float pos_mult = 3;    // class weight, you should select appropriate id, such as 3.
+    repeated float pos_cid = 4;     // class id
+}
