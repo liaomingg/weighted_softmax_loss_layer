@@ -3,7 +3,7 @@
 ### Introduction
 
 WeightedSoftmaxLossLayer for Caffe is modified from SoftmaxWithLossLayer in Caffe. You could set the class weight of each class in the prototxt file. 
-If it helps your research, please consider give me a star.
+If it helps your research, please consider give me a start.
 
 ### Add to Caffe
 
@@ -13,6 +13,7 @@ If it helps your research, please consider give me a star.
     ```
 
 2. Modify your caffe.proto
+    ```
     // Add the next contents to message SoftmaxParameter
     message SoftmaxParameter {
         // the next added for WeightedSoftmaxWithLossLayer
@@ -21,6 +22,7 @@ If it helps your research, please consider give me a star.
         repeated float pos_mult = 3;    // class weight, you should select appropriate id, such as 3.
         repeated float pos_cid = 4;     // class id
     }
+    ```
 
 3. Add source files to your Caffe
     Add weighted_softmax_loss_layer.hpp to Caffe/include/caffe/layers/
@@ -32,6 +34,7 @@ If it helps your research, please consider give me a star.
 ### How to use this layer
 
 1. Write codes such as follows in your prototxt file.
+    ```
     layer {
         name: "weighted_loss"
         type: "WeightedSoftmaxWithLoss"
@@ -52,3 +55,4 @@ If it helps your research, please consider give me a star.
                                 # and etc.
         }
     }
+    ```
