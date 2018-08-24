@@ -25,10 +25,12 @@ If it helps your research, please consider give me a start.
     ```
 
 3. Add source files to your Caffe
+    ```
     Add weighted_softmax_loss_layer.hpp to Caffe/include/caffe/layers/
     Add weighted_softmax_loss_layer.cpp to Caffe/src/caffe/layers/
     Add weighted_softmax_loss_layer.cu to Caffe/src/caffe/layers/
-
+    ```
+    
 4. Compile your Caffe
 
 ### How to use this layer
