@@ -3,7 +3,7 @@
 ### Introduction
 
 WeightedSoftmaxLossLayer for Caffe is modified from SoftmaxWithLossLayer in Caffe. You could set the class weight of each class in the prototxt file. 
-If it helps your research, please consider give me a start.
+If it helps your research, please consider give me a Star.
 
 ### Add to Caffe
 
